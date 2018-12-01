@@ -10,7 +10,7 @@
     "no-angle-bracket-type-assertion": true,
     "curly": [true, "ignore-same-line"],
     "variable-name": [
-      true,
+      false,
       "ban-keywords",
       "check-format",
       "allow-leading-underscore"

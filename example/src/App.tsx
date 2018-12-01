@@ -1,25 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { useRestate } from '../..';
 
-class App extends Component {
-    public render() {
-        return (
-            <div className="App">
-                <header className="App-header">
-                    <p>
-                        Edit <code>src/App.tsx</code> and save to reload.
-                    </p>
-                    <a
-                        className="App-link"
-                        href="https://reactjs.org"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Learn React
-                    </a>
-                </header>
-            </div>
-        );
-    }
+export default function Component() {
+    const [restate, dispatch] = useRestate((state: any) => {
+        return { count: state.count };
+    });
+
+    return (
+        <div>
+            <p>Hey</p>
+        </div>
+    );
 }
-
-export default App;

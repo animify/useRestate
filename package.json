@@ -5,12 +5,16 @@
   "repository": "https://github.com/animify/useRestate.git",
   "author": "Stefan Mansson <st.mansson@icloud.com>",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "react": "^16.7.0-alpha.2",
+    "redux": "^4.0.1"
+  },
   "scripts": {
     "release": "changelog && git push --follow-tags && yarn publish --access public --non-interactive",
     "lint": "tslint -p tsconfig.json"
   },
   "devDependencies": {
+    "@types/react": "^16.7.11",
     "changelog.md": "^1.1.0",
     "husky": "^1.2.0",
     "lint-staged": "^8.1.0",
