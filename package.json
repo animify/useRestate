@@ -4,7 +4,18 @@
   "main": "bundle/use-restate.js",
   "umd:main": "bundle/use-restate.umd.js",
   "module": "bundle/use-restate.m.js",
-  "repository": "https://github.com/animify/useRestate.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/overflowapp/Flow.git"
+  },
+  "keywords": [
+    "restate",
+    "use-restate",
+    "react hooks",
+    "redux hooks",
+    "useAction",
+    "useRestate"
+  ],
   "author": "Stefan Mansson <st.mansson@icloud.com>",
   "license": "MIT",
   "scripts": {
