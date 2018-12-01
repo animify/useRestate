@@ -18,7 +18,9 @@ const useStore = () => {
 
 export const RestateProvider = RestateContext.Provider;
 
-export function useRestate<T, U>(selectFrom: (state: T) => U): [U, Dispatch] {
+export function useRestate<TState, USelector>(
+    selectFrom: (state: TState) => USelector,
+): [USelector, Dispatch] {
     const store = useStore();
 
     const [restate, setRestate] = useState(() => selectFrom(store.getState()));
