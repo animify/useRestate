@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "lib": ["es2016", "dom"],
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "baseUrl": ".",
+    "importHelpers": true,
+    "outDir": "build",
+    "target": "es6",
+    "resolveJsonModule": true,
+    "sourceMap": true
+  },
+  "exclude": ["node_modules", "example"]
+}

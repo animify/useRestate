@@ -1,8 +1,32 @@
 {
   "name": "use-restate",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "main": "index.js",
   "repository": "https://github.com/animify/useRestate.git",
   "author": "Stefan Mansson <st.mansson@icloud.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {},
+  "scripts": {
+    "release": "changelog && git push --follow-tags && yarn publish --access public --non-interactive",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "devDependencies": {
+    "changelog.md": "^1.1.0",
+    "husky": "^1.2.0",
+    "lint-staged": "^8.1.0",
+    "tslint": "^5.11.0",
+    "typescript": "^3.2.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.ts": "yarn run lint"
+  }
 }
