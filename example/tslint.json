@@ -1,0 +1,31 @@
+{
+  "extends": ["tslint:latest", "tslint-react"],
+  "rules": {
+    "quotemark": [true, "single", "jsx-double"],
+    "object-literal-sort-keys": false,
+    "arrow-parens": [true, "ban-single-arg-parens"],
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "always",
+        "singleline": "ignore"
+      }
+    ],
+    "jsx-no-multiline-js": false,
+    "no-object-literal-type-assertion": false,
+    "ordered-imports": false,
+    "space-before-function-paren": [
+      true,
+      {
+        "anonymous": "never",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ]
+  },
+  "linterOptions": {
+    "exclude": [
+        "src/serviceWorker.ts"
+    ]
+}
+}
