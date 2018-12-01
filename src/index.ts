@@ -55,7 +55,7 @@ export function useRestate<TState, USelector>(
 
 export function useAction<TAction extends Action>(action: TAction): () => TAction {
     const store = useStore();
-    const memoizedDispatch = useCallback(() => store.dispatch(action), [action]);
+    const dispatch = useCallback(() => store.dispatch(action), [action]);
 
-    return memoizedDispatch;
+    return dispatch;
 }
