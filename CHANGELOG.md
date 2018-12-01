@@ -1,3 +1,11 @@
+## [Version 0.0.3](https://github.com/animify/useRestate/releases/tag/v0.0.3) (2018-12-1)
+
+### Bug fixes
+
+- renaming in useAction: [`5923008`](https://github.com/animify/useRestate/commit/5923008)
+
+[...full changes](https://github.com/animify/useRestate/compare/v0.0.2...v0.0.3)
+
 ## [Version 0.0.2](https://github.com/animify/useRestate/releases/tag/v0.0.2) (2018-12-1)
 
 ### Bug fixes
