@@ -6,7 +6,7 @@
   "module": "bundle/use-restate.m.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/overflowapp/Flow.git"
+    "url": "git+https://github.com/animify/useRestate.git"
   },
   "keywords": [
     "restate",
