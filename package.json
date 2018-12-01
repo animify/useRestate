@@ -1,0 +1,8 @@
+{
+  "name": "use-restate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/animify/useRestate.git",
+  "author": "Stefan Mansson <st.mansson@icloud.com>",
+  "license": "MIT"
+}
