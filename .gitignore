@@ -1,6 +1,8 @@
 # App
 .cache
+bundle
 dist
+.rts2*
 
 # Logs
 logs

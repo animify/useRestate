@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import Comp from './Comp';
 import { RestateProvider } from '../src';

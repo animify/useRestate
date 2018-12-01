@@ -1,8 +1,8 @@
 import React, { useState, useContext, useEffect, useRef, useCallback } from 'react';
-import { Dispatch, Store, AnyAction, Action } from 'redux';
+import { Dispatch, Store, Action } from 'redux';
 import shallowEqual from './shallowEqual';
 
-const RestateContext: React.Context<Store<any> | null> = React.createContext(null);
+const RestateContext: React.Context<Store<any> | undefined> = React.createContext(undefined);
 
 const useStore = () => {
     const store = useContext(RestateContext);
@@ -22,7 +22,7 @@ export function useRestate<T, U>(selectFrom: (state: T) => U): [U, Dispatch] {
     const store = useStore();
 
     const [restate, setRestate] = useState(() => selectFrom(store.getState()));
-    const previousRestate = useRef();
+    const previousRestate = useRef({});
 
     useEffect(() => {
         previousRestate.current = restate;
@@ -51,7 +51,7 @@ export function useRestate<T, U>(selectFrom: (state: T) => U): [U, Dispatch] {
     return [restate, store.dispatch];
 }
 
-export function useAction<TAction extends Action>(action: TAction) {
+export function useAction<TAction extends Action>(action: TAction): () => TAction {
     const store = useStore();
     const memoizedDispatch = useCallback(() => store.dispatch(action), [action]);
 
