@@ -27,8 +27,7 @@
   "dependencies": {
     "react": "^16.7.0-alpha.2",
     "react-dom": "^16.7.0-alpha.2",
-    "redux": "^4.0.1",
-    "use-restate": "^0.0.7"
+    "redux": "^4.0.1"
   },
   "devDependencies": {
     "@types/jest": "^23.3.10",

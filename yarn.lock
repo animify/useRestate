@@ -8819,25 +8819,6 @@ url@^0.11.0:
     punycode "1.3.2"
     querystring "0.2.0"
 
-use-restate@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/use-restate/-/use-restate-0.0.6.tgz#da88040e306bae5bd142d4f66afb3c6fec25f6a8"
-  integrity sha512-VOavIphZnI0hCWvj9N2m/uU5t501gZVDdpnG0z/piYgikgpf2Wv4ieL5e1nnkKQrsckgLalud2uAjIxxHlc66g==
-  dependencies:
-    react "^16.7.0-alpha.2"
-    react-dom "^16.7.0-alpha.2"
-    redux "^4.0.1"
-
-use-restate@^0.0.7:
-  version "0.0.7"
-  resolved "https://registry.yarnpkg.com/use-restate/-/use-restate-0.0.7.tgz#154d3ec8cd27017f49142860bcce96b62cc06fb3"
-  integrity sha512-rmKG2+0etCSC+yPTk/kt52Q7uz7GVn4pVvcz+/spwDWAwOWb6NVz0eRYdb45XwGXaoGYVfzpDdqm4XdBhqHM3g==
-  dependencies:
-    react "^16.7.0-alpha.2"
-    react-dom "^16.7.0-alpha.2"
-    redux "^4.0.1"
-    use-restate "^0.0.6"
-
 use@^3.1.0:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/use/-/use-3.1.1.tgz#d50c8cac79a19fbc20f2911f56eb973f4e10070f"
