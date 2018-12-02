@@ -2,7 +2,8 @@
   "name": "use-restate",
   "version": "0.0.13",
   "main": "dist/use-restate.js",
-  "module": "dist/use-restate.es.js",
+  "umd:main": "dist/use-restate.umd.js",
+  "module": "dist/use-restate.m.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/animify/useRestate.git"
@@ -19,6 +20,7 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel ./example/index.html",
+    "bundle": "microbundle build -i src/index.ts -o dist/ --name use-restate --compress false --sourcemap false",
     "build": "sh ./build.sh",
     "prepublishOnly": "yarn build",
     "release": "changelog && git push --follow-tags && yarn publish --access public --non-interactive",
@@ -46,7 +48,7 @@
     "typescript": "^3.2.1"
   },
   "files": [
-    "bundle",
+    "dist",
     "index.d.ts",
     "shallowEqual.d.ts",
     "README.md",
