@@ -1,7 +1,8 @@
 {
   "name": "use-restate",
   "version": "0.0.12",
-  "main": "bundle/use-restate.js",
+  "main": "dist/use-restate.js",
+  "module": "dist/use-restate.es.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/animify/useRestate.git"

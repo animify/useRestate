@@ -1,8 +1,8 @@
-import React, { useState, useContext, useEffect, useRef, useCallback } from 'react';
+import { createContext, useState, useContext, useEffect, useRef, useCallback } from 'react';
 import { Dispatch, Store, Action } from 'redux';
 import shallowEqual from './shallowEqual';
 
-export const RestateContext: React.Context<Store<any> | null> = React.createContext(null);
+export const RestateContext: React.Context<Store<any> | null> = createContext(null);
 export const RestateProvider = RestateContext.Provider;
 
 const useStore = () => {

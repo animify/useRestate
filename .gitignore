@@ -1,5 +1,6 @@
 # App
 .cache
+/build
 /bundle
 /dist
 /.rts2*
