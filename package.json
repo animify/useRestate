@@ -30,8 +30,7 @@
   "dependencies": {
     "react": "^16.7.0-alpha.0",
     "react-dom": "^16.7.0-alpha.0",
-    "redux": "^4.0.1",
-    "use-restate": "^0.0.10"
+    "redux": "^4.0.1"
   },
   "devDependencies": {
     "@types/jest": "^23.3.10",
