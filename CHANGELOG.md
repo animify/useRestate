@@ -1,3 +1,11 @@
+## [Version 0.0.7](https://github.com/animify/useRestate/releases/tag/v0.0.7) (2018-12-2)
+
+### Bug fixes
+
+- update App imports: [`a8a498d`](https://github.com/animify/useRestate/commit/a8a498d)
+
+[...full changes](https://github.com/animify/useRestate/compare/v0.0.6...v0.0.7)
+
 ## [Version 0.0.6](https://github.com/animify/useRestate/releases/tag/v0.0.6) (2018-12-2)
 
 ### New features
