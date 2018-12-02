@@ -1,3 +1,11 @@
+## [Version 0.0.12](https://github.com/animify/useRestate/releases/tag/v0.0.12) (2018-12-2)
+
+### Bug fixes
+
+- use null in context over undefined: [`b94d914`](https://github.com/animify/useRestate/commit/b94d914)
+
+[...full changes](https://github.com/animify/useRestate/compare/v0.0.11...v0.0.12)
+
 ## [Version 0.0.11](https://github.com/animify/useRestate/releases/tag/v0.0.11) (2018-12-2)
 
 ### Bug fixes
