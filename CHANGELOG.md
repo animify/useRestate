@@ -1,3 +1,12 @@
+## [Version 0.0.4](https://github.com/animify/useRestate/releases/tag/v0.0.4) (2018-12-2)
+
+### Bug fixes
+
+- export Context: [`d36b938`](https://github.com/animify/useRestate/commit/d36b938)
+- export useDispatch, only return restate in useRestate: [`8cf9d0d`](https://github.com/animify/useRestate/commit/8cf9d0d)
+
+[...full changes](https://github.com/animify/useRestate/compare/v0.0.3...v0.0.4)
+
 ## [Version 0.0.3](https://github.com/animify/useRestate/releases/tag/v0.0.3) (2018-12-1)
 
 ### Bug fixes

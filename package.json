@@ -1,6 +1,6 @@
 {
   "name": "use-restate",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "bundle/use-restate.js",
   "umd:main": "bundle/use-restate.umd.js",
   "module": "bundle/use-restate.m.js",
