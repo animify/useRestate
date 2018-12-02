@@ -17,9 +17,7 @@ const useStore = () => {
     return store;
 };
 
-export function useRestate<TState, USelector>(
-    selectFrom: (state: TState) => USelector,
-): [USelector, Dispatch] {
+export function useRestate<TState, TSelector>(selectFrom: (state: TState) => TSelector): TSelector {
     const store = useStore();
 
     const [restate, setRestate] = useState(() => selectFrom(store.getState()));
@@ -49,12 +47,18 @@ export function useRestate<TState, USelector>(
         [store, selectFrom],
     );
 
-    return [restate, store.dispatch];
+    return restate;
+}
+
+export function useDispatch<TAction extends Action>(): Dispatch<TAction> {
+    const store = useStore();
+
+    return store.dispatch;
 }
 
 export function useAction<TAction extends Action>(action: TAction): () => TAction {
-    const store = useStore();
-    const dispatch = useCallback(() => store.dispatch(action), [action]);
+    const dispatch = useDispatch();
+    const memoizedDispatch = useCallback(() => dispatch(action), [action]);
 
-    return dispatch;
+    return memoizedDispatch;
 }

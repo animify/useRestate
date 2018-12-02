@@ -1,19 +1,21 @@
 import React from 'react';
-import { useRestate, useAction } from '../src';
+import { useRestate, useAction, useDispatch } from '../src';
 
 export default function Component() {
-    const [restate, dispatch] = useRestate((state: { count: number }) => {
+    const dispatch = useDispatch();
+    const { count } = useRestate((state: { count: number }) => {
         return { count: state.count };
     });
 
     const incrementAction = { type: 'INCREMENT' };
+    const derementAction = { type: 'DECREMENT' };
     const increment = useAction(incrementAction);
 
     return (
         <div>
-            <p>{restate.count}</p>
+            <p>{count}</p>
             <a onClick={increment}>Increment count</a>
-            <a onClick={() => dispatch({ type: 'DECREMENT' })}>Decrement count</a>
+            <a onClick={() => dispatch(derementAction)}>Decrement count</a>
         </div>
     );
 }
