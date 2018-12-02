@@ -12,9 +12,22 @@ yarn add use-restate
 npm install use-restate
 ```
 
-## Usage
+## Features
 
-> React hooks require react & react-dom at version 16.7.0-alpha.0 or higher.
+- Feather light
+- Avoid needless re-renders
+- An API that you're used to
+- Works with any Redux-like store
+- Memoized action dispatch functions
+- Quick access to store dispatch
+- Typescript support
+
+
+## Prerequisites
+
+React hooks require react & react-dom at version 16.7.0-alpha.0 or higher.
+
+## Usage
 
 `use-restate` requires you to provide your Redux-like store to `RestateProvider`.
 
