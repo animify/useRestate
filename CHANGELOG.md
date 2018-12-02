@@ -1,3 +1,11 @@
+## [Version 0.0.14](https://github.com/animify/useRestate/releases/tag/v0.0.14) (2018-12-2)
+
+### Bug fixes
+
+- update build script: [`e7fa2db`](https://github.com/animify/useRestate/commit/e7fa2db)
+
+[...full changes](https://github.com/animify/useRestate/compare/v0.0.13...v0.0.14)
+
 ## [Version 0.0.13](https://github.com/animify/useRestate/releases/tag/v0.0.13) (2018-12-2)
 
 ### Bug fixes
