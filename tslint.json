@@ -27,5 +27,10 @@
     "prefer-const": true,
     "radix": false,
     "triple-equals": [true, "allow-null-check"]
-  }
+  },
+  "linterOptions": {
+    "exclude": [
+        "src/react.d.ts"
+    ]
+}
 }

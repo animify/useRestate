@@ -3,8 +3,8 @@
 
 function BUNDLE {
     echo "Microbundling..."
-    rm -rf dist
-    microbundle build -i src/index.ts -o bundle/ --name use-restate --sourcemap false
+    rm -rf bundle
+    microbundle build -i src/index.ts -o bundle/ --name use-restate --sourcemap false --compress false
     mv bundle/index.d.ts index.d.ts
     mv bundle/shallowEqual.d.ts shallowEqual.d.ts
     echo "Microbundling done."
