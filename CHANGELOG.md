@@ -1,3 +1,11 @@
+## [Version 0.0.10](https://github.com/animify/useRestate/releases/tag/v0.0.10) (2018-12-2)
+
+### Bug fixes
+
+- remove useStore function & error check: [`ffe6ffe`](https://github.com/animify/useRestate/commit/ffe6ffe)
+
+[...full changes](https://github.com/animify/useRestate/compare/v0.0.9...v0.0.10)
+
 ## [Version 0.0.9](https://github.com/animify/useRestate/releases/tag/v0.0.9) (2018-12-2)
 
 ### Bug fixes
