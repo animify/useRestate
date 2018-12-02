@@ -3,6 +3,8 @@
  A React Hook that subscribes your state selector to the store and memoizes your action dispatchers.
 
 ```js
+import { useAction, useRestate } from 'use-restate';
+
 function Count() {
     const increment = useAction({ type: 'INCREMENT' });
     const { count } = useRestate(state => {
