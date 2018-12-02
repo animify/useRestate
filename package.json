@@ -1,6 +1,6 @@
 {
   "name": "use-restate",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "bundle/use-restate.js",
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel ./example/index.html",
-    "build": "microbundle build -i src/index.ts -o bundle/ --name use-restate --sourcemap false",
+    "build": "sh ./build.sh",
     "prepublishOnly": "yarn build",
     "release": "changelog && git push --follow-tags && yarn publish --access public --non-interactive",
     "lint": "tslint -p tsconfig.json",
@@ -27,7 +27,8 @@
   "dependencies": {
     "react": "^16.7.0-alpha.2",
     "react-dom": "^16.7.0-alpha.2",
-    "redux": "^4.0.1"
+    "redux": "^4.0.1",
+    "use-restate": "^0.0.6"
   },
   "devDependencies": {
     "@types/jest": "^23.3.10",
@@ -45,6 +46,8 @@
   },
   "files": [
     "bundle",
+    "index.d.ts",
+    "shallowEqual.d.ts",
     "README.md",
     "LICENSE"
   ],
