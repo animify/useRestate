@@ -1,8 +1,10 @@
 # App
 .cache
-bundle
-dist
-.rts2*
+/bundle
+/dist
+/.rts2*
+/index.d.ts
+/shallowEqual.d.ts
 
 # Logs
 logs
