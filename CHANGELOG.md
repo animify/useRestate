@@ -1,3 +1,15 @@
+## [Version 0.0.6](https://github.com/animify/useRestate/releases/tag/v0.0.6) (2018-12-2)
+
+### New features
+
+- Update README.md: [`710aed1`](https://github.com/animify/useRestate/commit/710aed1)
+
+### Bug fixes
+
+- update bundle to include typings in root: [`f3f1bd2`](https://github.com/animify/useRestate/commit/f3f1bd2)
+
+[...full changes](https://github.com/animify/useRestate/compare/v0.0.5...v0.0.6)
+
 ## [Version 0.0.5](https://github.com/animify/useRestate/releases/tag/v0.0.5) (2018-12-2)
 
 ### Bug fixes
