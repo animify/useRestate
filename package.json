@@ -1,6 +1,6 @@
 {
   "name": "use-restate",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "main": "dist/use-restate.js",
   "module": "dist/use-restate.es.js",
   "repository": {

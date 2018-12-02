@@ -1,3 +1,11 @@
+## [Version 0.0.13](https://github.com/animify/useRestate/releases/tag/v0.0.13) (2018-12-2)
+
+### Bug fixes
+
+- update React imports & tsconfig: [`77cb2e0`](https://github.com/animify/useRestate/commit/77cb2e0)
+
+[...full changes](https://github.com/animify/useRestate/compare/v0.0.12...v0.0.13)
+
 ## [Version 0.0.12](https://github.com/animify/useRestate/releases/tag/v0.0.12) (2018-12-2)
 
 ### Bug fixes
