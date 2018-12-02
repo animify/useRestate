@@ -2,7 +2,8 @@ import React, { useState, useContext, useEffect, useRef, useCallback } from 'rea
 import { Dispatch, Store, Action } from 'redux';
 import shallowEqual from './shallowEqual';
 
-const RestateContext: React.Context<Store<any> | undefined> = React.createContext(undefined);
+export const RestateContext: React.Context<Store<any> | undefined> = React.createContext(undefined);
+export const RestateProvider = RestateContext.Provider;
 
 const useStore = () => {
     const store = useContext(RestateContext);
@@ -15,8 +16,6 @@ const useStore = () => {
 
     return store;
 };
-
-export const RestateProvider = RestateContext.Provider;
 
 export function useRestate<TState, USelector>(
     selectFrom: (state: TState) => USelector,
