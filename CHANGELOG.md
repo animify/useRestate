@@ -1,3 +1,13 @@
+## [Version 0.0.8](https://github.com/animify/useRestate/releases/tag/v0.0.8) (2018-12-2)
+
+### Bug fixes
+
+- Update README.md: [`3044d16`](https://github.com/animify/useRestate/commit/3044d16)
+- Update README.md: [`85eed00`](https://github.com/animify/useRestate/commit/85eed00)
+- Update README.md: [`c5bd7f8`](https://github.com/animify/useRestate/commit/c5bd7f8)
+
+[...full changes](https://github.com/animify/useRestate/compare/v0.0.7...v0.0.8)
+
 ## [Version 0.0.7](https://github.com/animify/useRestate/releases/tag/v0.0.7) (2018-12-2)
 
 ### Bug fixes
