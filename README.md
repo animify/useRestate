@@ -1,7 +1,23 @@
 # useRestate
 
- A React hook that subscribes your state selector to the store.
- 
+ A React Hook that subscribes your state selector to the store and memoizes your action dispatchers.
+
+```js
+function Count() {
+    const increment = useAction({ type: 'INCREMENT' });
+    const { count } = useRestate(state => {
+        return { count: state.count };
+    });
+
+    return (
+        <div>
+            <h2>{count}</h2>
+            <button onClick={increment}>Increment</button>
+        </div>
+    );
+}
+```
+
 ## Install
 
 ```bash
@@ -20,47 +36,27 @@ npm install use-restate
 - Works with any Redux-like store
 - Memoized action dispatch functions
 - Quick access to store dispatch
-- Typescript support
+- Full Typescript support
 
 
 ## Prerequisites
 
-React hooks require react & react-dom at version 16.7.0-alpha.0 or higher.
+⚠️ React hooks require `react` & `react-dom` at version 16.7.0-alpha.0 or higher.
 
 ## Usage
 
-`use-restate` requires you to provide your Redux-like store to `RestateProvider`.
+The `use-restate` package requires you to provide your Redux-like store to `RestateProvider`.
 
 ### Setting up the store
 
-Before using the hook, your store should be passed to `RestateProvider`.
+Before using the hook, your store should be passed to `RestateProvider`. You also have access to `RestateContext` should you need it to inject middleware.
 
 ```js
 import React from 'react';
 import { createStore } from 'redux';
 import { RestateProvider, RestateContext } from 'use-restate';
 
-const Actions = {
-    INCREMENT: 'INCREMENT',
-    DECREMENT: 'DECREMENT',
-};
-
-const Reducer = (state: { count: number }, action: any) => {
-    switch (action.type) {
-        case Actions.INCREMENT:
-            return {
-                count: state.count + 1,
-            };
-        case Actions.DECREMENT:
-            return {
-                count: state.count - 1,
-            };
-        default:
-            return state;
-    }
-};
-
-const store = createStore(Reducer, { count: 3 });
+...
 
 export default function App() {
     return (
