@@ -1,9 +1,7 @@
 import React from 'react';
 import { createStore } from 'redux';
-import Comp from './Comp';
 import Test from './Test';
 import { RestateProvider } from 'use-restate';
-// import { RestateProvider } from '../src';
 
 const Actions = {
     INCREMENT: 'INCREMENT',
