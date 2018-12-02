@@ -1,6 +1,6 @@
 {
   "name": "use-restate",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "main": "dist/use-restate.js",
   "umd:main": "dist/use-restate.umd.js",
   "module": "dist/use-restate.m.js",

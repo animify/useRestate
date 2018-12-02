@@ -1,3 +1,11 @@
+## [Version 0.0.15](https://github.com/animify/useRestate/releases/tag/v0.0.15) (2018-12-2)
+
+### Bug fixes
+
+- remove use-restate dependency: [`befabc9`](https://github.com/animify/useRestate/commit/befabc9)
+
+[...full changes](https://github.com/animify/useRestate/compare/v0.0.14...v0.0.15)
+
 ## [Version 0.0.14](https://github.com/animify/useRestate/releases/tag/v0.0.14) (2018-12-2)
 
 ### Bug fixes
