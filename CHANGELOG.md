@@ -1,3 +1,11 @@
+## [Version 0.0.5](https://github.com/animify/useRestate/releases/tag/v0.0.5) (2018-12-2)
+
+### Bug fixes
+
+- remove umd & module builds: [`8901c78`](https://github.com/animify/useRestate/commit/8901c78)
+
+[...full changes](https://github.com/animify/useRestate/compare/v0.0.4...v0.0.5)
+
 ## [Version 0.0.4](https://github.com/animify/useRestate/releases/tag/v0.0.4) (2018-12-2)
 
 ### Bug fixes
