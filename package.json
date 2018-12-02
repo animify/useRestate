@@ -2,8 +2,6 @@
   "name": "use-restate",
   "version": "0.0.4",
   "main": "bundle/use-restate.js",
-  "umd:main": "bundle/use-restate.umd.js",
-  "module": "bundle/use-restate.m.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/animify/useRestate.git"
