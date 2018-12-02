@@ -127,6 +127,10 @@ export default function Component() {
 }
 ```
 
+## Issues & suggestions
+
+If you find any runtime issues or have any suggestions on how to improve the package please do open an ![issue](https://github.com/animify/useRestate/issues)!
+
 ## License
 
 ![MIT License](LICENSE)
