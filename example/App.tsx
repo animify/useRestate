@@ -1,7 +1,7 @@
 import React from 'react';
 import { createStore } from 'redux';
-import Comp from './Comp';
-import { RestateProvider } from '../src';
+import Count from './Count';
+import { RestateProvider } from 'use-restate';
 
 const Actions = {
     INCREMENT: 'INCREMENT',
@@ -28,7 +28,7 @@ const store = createStore(Reducer, { count: 3 });
 export default function App() {
     return (
         <RestateProvider value={store}>
-            <Comp />
+            <Count />
         </RestateProvider>
     );
 }

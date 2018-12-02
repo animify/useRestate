@@ -5,20 +5,8 @@ import shallowEqual from './shallowEqual';
 export const RestateContext: React.Context<Store<any> | undefined> = React.createContext(undefined);
 export const RestateProvider = RestateContext.Provider;
 
-const useStore = () => {
-    const store = useContext(RestateContext);
-
-    if (!store) {
-        throw new Error(
-            'use-restate requires you to initiate your redux-like store - e.g <RestateProvider value={store} />',
-        );
-    }
-
-    return store;
-};
-
 export function useRestate<TState, TSelector>(selectFrom: (state: TState) => TSelector): TSelector {
-    const store = useStore();
+    const store = useContext(RestateContext);
 
     const [restate, setRestate] = useState(() => selectFrom(store.getState()));
     const previousRestate = useRef({});
@@ -51,7 +39,7 @@ export function useRestate<TState, TSelector>(selectFrom: (state: TState) => TSe
 }
 
 export function useDispatch<TAction extends Action>(): Dispatch<TAction> {
-    const store = useStore();
+    const store = useContext(RestateContext);
 
     return store.dispatch;
 }

@@ -7118,7 +7118,7 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-dom@^16.7.0-alpha.2:
+react-dom@^16.7.0-alpha.0, react-dom@^16.7.0-alpha.2:
   version "16.7.0-alpha.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.7.0-alpha.2.tgz#16632880ed43676315991d8b412cce6975a30282"
   integrity sha512-o0mMw8jBlwHjGZEy/vvKd/6giAX0+skREMOTs3/QHmgi+yAhUClp4My4Z9lsKy3SXV+03uPdm1l/QM7NTcGuMw==
@@ -7128,7 +7128,7 @@ react-dom@^16.7.0-alpha.2:
     prop-types "^15.6.2"
     scheduler "^0.12.0-alpha.2"
 
-react@^16.7.0-alpha.2:
+react@^16.7.0-alpha.0, react@^16.7.0-alpha.2:
   version "16.7.0-alpha.2"
   resolved "https://registry.yarnpkg.com/react/-/react-16.7.0-alpha.2.tgz#924f2ae843a46ea82d104a8def7a599fbf2c78ce"
   integrity sha512-Xh1CC8KkqIojhC+LFXd21jxlVtzoVYdGnQAi/I2+dxbmos9ghbx5TQf9/nDxc4WxaFfUQJkya0w1k6rMeyIaxQ==
@@ -8495,9 +8495,9 @@ timsort@^0.3.0:
   integrity sha1-QFQRqOfmM5/mTbmiNN4R3DHgK9Q=
 
 tiny-glob@^0.2.0:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/tiny-glob/-/tiny-glob-0.2.3.tgz#9dba7fe22b1e4e2e7bb59815b10152bdf3d085b4"
-  integrity sha512-pkCxlClaL6MznxrgW4D2VDk5w6hz3SEOtXcJ9CPhxLjhpsvTd1g3qkMAqxoJNjKsCQlJj6w485ij5d5/Fb9jUQ==
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/tiny-glob/-/tiny-glob-0.2.4.tgz#11cbdb455903053c885791cbd6e5458a91b9f355"
+  integrity sha512-Tej4Ftrtw9LVQCOiwG+15/sg1vmKG4l0PF3dRBtofyRwv3C0/gU0u3iRQd9YCUR1NPQT3kMB+3w9ecK0qigPRA==
   dependencies:
     globalyzer "^0.1.0"
     globrex "^0.1.1"
@@ -8818,6 +8818,15 @@ url@^0.11.0:
   dependencies:
     punycode "1.3.2"
     querystring "0.2.0"
+
+use-restate@^0.0.9:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/use-restate/-/use-restate-0.0.9.tgz#cce76d72a7e88139b07bd7d730f4771465eed9ed"
+  integrity sha512-Ex+3GBKqkhc8RrpcxrA75nt7HvUvQwCux2R2YJX+S9KrcjtypapyH3jatWNcrc3IdUu3g28RAiJegu9smeVk0Q==
+  dependencies:
+    react "^16.7.0-alpha.2"
+    react-dom "^16.7.0-alpha.2"
+    redux "^4.0.1"
 
 use@^3.1.0:
   version "3.1.1"
