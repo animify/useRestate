@@ -21,7 +21,7 @@ export function useRestate<TState, TSelector>(selectFrom: (state: TState) => TSe
     const store = useStore();
 
     const [restate, setRestate] = useState(() => selectFrom(store.getState()));
-    const previousRestate = useRef();
+    const previousRestate = useRef({});
 
     useEffect(() => {
         previousRestate.current = restate;

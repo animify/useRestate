@@ -1,5 +1,5 @@
 import React from 'react';
-import { useRestate, useAction, useDispatch } from 'use-restate';
+import { useRestate, useAction, useDispatch } from '../src';
 
 export default function Component() {
     const dispatch = useDispatch();
