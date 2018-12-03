@@ -6,6 +6,7 @@
 /site
 /.rts2*
 /index.d.ts
+/shallowEqual.d.ts
 
 # Logs
 logs
