@@ -1,3 +1,11 @@
+## [Version 0.0.16](https://github.com/animify/useRestate/releases/tag/v0.0.16) (2018-12-3)
+
+### Bug fixes
+
+- update gitignore: [`6a073a8`](https://github.com/animify/useRestate/commit/6a073a8)
+
+[...full changes](https://github.com/animify/useRestate/compare/v0.0.15...v0.0.16)
+
 ## [Version 0.0.15](https://github.com/animify/useRestate/releases/tag/v0.0.15) (2018-12-2)
 
 ### Bug fixes
