@@ -1,3 +1,11 @@
+## [Version 0.0.17](https://github.com/animify/useRestate/releases/tag/v0.0.17) (2018-12-3)
+
+### Bug fixes
+
+- remove dependencies: [`18c5b5a`](https://github.com/animify/useRestate/commit/18c5b5a)
+
+[...full changes](https://github.com/animify/useRestate/compare/v0.0.16...v0.0.17)
+
 ## [Version 0.0.16](https://github.com/animify/useRestate/releases/tag/v0.0.16) (2018-12-3)
 
 ### Bug fixes
