@@ -63,8 +63,11 @@ Before using the hook, your store should be passed to `RestateProvider`. You als
 import React from 'react';
 import { createStore } from 'redux';
 import { RestateProvider, RestateContext } from 'use-restate';
+import combinedReducers from './reducers';
 
 ...
+
+const store = createStore(combinedReducers, { count: 3 });
 
 export default function App() {
     return (
@@ -153,9 +156,7 @@ export default function Component() {
     const dispatch = useDispatch();
 
     return (
-        <div>
-            <a onClick={() => dispatch({ type: 'DECREMENT' })}>Decrement count</a>
-        </div>
+        <a onClick={() => dispatch({ type: 'DECREMENT' })}>Decrement count</a>
     );
 }
 ```
