@@ -1,4 +1,4 @@
-# useRestate
+# ⚡️ useRestate
 
  A React Hook that subscribes your state selector to the store and memoizes your action dispatchers.
 
@@ -36,7 +36,7 @@ npm install use-restate
 - Avoid needless re-renders
 - An API that you're used to
 - Works with any Redux-like store
-- Memoized action dispatch functions
+- Memoize single/multiple action dispatch functions
 - Quick access to store dispatch
 - Full Typescript support
 
@@ -68,6 +68,8 @@ export default function App() {
     );
 }
 ```
+
+## API
 
 ### `useRestate(mapState)`
 
