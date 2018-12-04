@@ -34,11 +34,12 @@ npm install use-restate
 
 - Feather light
 - Avoid needless re-renders
-- An API that you're used to
+- A familiar API
 - Works with any Redux-like store
-- Memoize single/multiple action dispatch functions
+- Memoize single or multiple action dispatch functions
 - Quick access to store dispatch
 - Full Typescript support
+- Works without `react-redux`
 
 
 ## Prerequisites
@@ -107,6 +108,29 @@ export default function Component() {
     return (
         <div>
             <a onClick={increment}>Increment count</a>
+        </div>
+    );
+}
+```
+
+### `useActions(actionsMap)`
+
+Wraps a map of actions in a dispatcher and memoizes each one with `useCallback`. Returns the same map with each key containing its paired action dispatcher.
+
+```js
+import React from 'react';
+import { useAction } from 'use-restate';
+
+export default function Component() {
+    const { increment, decrement } = useActions({
+        increment: { type: 'INCREMENT' },
+        decrement: { type: 'DECREMENT' },
+    });
+
+    return (
+        <div>
+            <a onClick={increment}>Increment count</a>
+            <a onClick={decrement}>Decrement count</a>
         </div>
     );
 }
