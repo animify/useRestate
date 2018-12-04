@@ -1,5 +1,5 @@
 import React from 'react';
-import { useRestate, useAction, useDispatch } from '../src';
+import { useRestate, useActions, useDispatch } from '../src';
 
 export default function Component() {
     const dispatch = useDispatch();
@@ -7,15 +7,17 @@ export default function Component() {
         return { count: state.count };
     });
 
-    const incrementAction = { type: 'INCREMENT' };
-    const derementAction = { type: 'DECREMENT' };
-    const increment = useAction(incrementAction);
+    const { increment, decrement } = useActions({
+        increment: { type: 'INCREMENT' },
+        decrement: { type: 'DECREMENT' },
+    });
 
     return (
         <div>
             <p>{count}</p>
             <a onClick={increment}>Increment count</a>
-            <a onClick={() => dispatch(derementAction)}>Decrement count</a>
+            <a onClick={() => dispatch({ type: 'DECREMENT' })}>Decrement count</a>
+            <a onClick={decrement}>Decrement other</a>
         </div>
     );
 }

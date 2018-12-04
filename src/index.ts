@@ -62,3 +62,22 @@ export function useAction<TAction extends Action>(action: TAction): () => TActio
 
     return memoizedDispatch;
 }
+
+export function useActions<TAction extends Action>(actions: {
+    [index: string]: TAction;
+}): {
+    [index: string]: () => TAction;
+} {
+    const dispatch = useDispatch();
+    const memoizedActions = Object.entries(actions).reduce(
+        (obj, [key, action]) => {
+            obj[key] = useCallback(() => dispatch(action), [action]);
+            return obj;
+        },
+        {} as {
+            [index: string]: () => TAction;
+        },
+    );
+
+    return memoizedActions;
+}
