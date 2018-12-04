@@ -9,6 +9,7 @@ function Count() {
     const { count } = useRestate(state => ({
         count: state.count
     }));
+
     const { increment, decrement } = useActions({
         increment: { type: 'INCREMENT' },
         decrement: { type: 'DECREMENT' },
