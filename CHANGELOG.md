@@ -1,3 +1,15 @@
+## [Version 0.0.18](https://github.com/animify/useRestate/releases/tag/v0.0.18) (2018-12-4)
+
+### New features
+
+- useActions to memoize several actions: [`fe70a45`](https://github.com/animify/useRestate/commit/fe70a45)
+
+### Bug fixes
+
+- Update README.md: [`47b3fde`](https://github.com/animify/useRestate/commit/47b3fde)
+
+[...full changes](https://github.com/animify/useRestate/compare/v0.0.17...v0.0.18)
+
 ## [Version 0.0.17](https://github.com/animify/useRestate/releases/tag/v0.0.17) (2018-12-3)
 
 ### Bug fixes
