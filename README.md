@@ -3,6 +3,7 @@
  A React Hook that subscribes your state selector to the store and memoizes your action dispatchers.
 
 ```js
+import React from 'react';
 import { useActions, useRestate } from 'use-restate';
 
 function Count() {
