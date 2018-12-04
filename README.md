@@ -1,4 +1,4 @@
-# ⚡️ useRestate
+# useRestate ⚡️
 
  A React Hook that subscribes your state selector to the store and memoizes your action dispatchers.
 
@@ -119,7 +119,7 @@ Wraps a map of actions in a dispatcher and memoizes each one with `useCallback`.
 
 ```js
 import React from 'react';
-import { useAction } from 'use-restate';
+import { useActions } from 'use-restate';
 
 export default function Component() {
     const { increment, decrement } = useActions({
