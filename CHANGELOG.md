@@ -1,3 +1,12 @@
+## [Version 0.0.19](https://github.com/animify/useRestate/releases/tag/v0.0.19) (2018-12-4)
+
+### Bug fixes
+
+- Update README.md: [`222ede4`](https://github.com/animify/useRestate/commit/222ede4)
+- Merge pull request #1 from animify/add-code-of-conduct-1: [`6e90459`](https://github.com/animify/useRestate/commit/6e90459)
+
+[...full changes](https://github.com/animify/useRestate/compare/v0.0.18...v0.0.19)
+
 ## [Version 0.0.18](https://github.com/animify/useRestate/releases/tag/v0.0.18) (2018-12-4)
 
 ### New features
